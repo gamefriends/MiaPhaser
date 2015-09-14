@@ -1,18 +1,18 @@
 # MiaPhaser
-Flash To Phaser
+##Flash To Phaser
 
 
 I create jsfl tools to easy create UI and Scene in Adobe Flash.
-The project: https://github.com/gamefriends/MiaPhaser.
+The project: [MiaPhaser](https://github.com/gamefriends/MiaPhaser)
 
 create project like this:
 
 
-First:
+###First:
 create fla in Flash, and design the UI and Scene in timeline.
 
 
-Second:
+###Second:
 run the ExportToJS.jsfl
 it will be export the stage resource to PNG in /res
 
@@ -20,17 +20,18 @@ Edit game config
 
 //the defalut stage size as same as Fla publish size
 //set the boot scene and firstScene
-
+```javasciprt
 MIA.gameConfig = {
     stageWidth:MIA.stageDes.stageWidth,
     stageHeight:MIA.stageDes.stageHeight,
     bootScene:"Boot",
     firstScene:"Scene1"
 };
+```
 
 
+```javascript
 //set the scene
-
 MIA.startGame = function () {
     var game = new Phaser.Game(MIA.gameConfig.stageWidth, MIA.gameConfig.stageHeight, Phaser.AUTO, 'game');
     //----Add Scene
@@ -44,15 +45,15 @@ MIA.startGame = function () {
     MIA.gameConfig.firstScene = "Scene1";
     game.state.start(MIA.gameConfig.bootScene);
 };
+```
+
+###Last
+* ####edit game logic
+* ####edit index.html
+* ###run the game
 
 
-Last
-edit game logic
-edit index.html
-run the game
-
-
-If you have any suggest, please [twitter]miagame_com[/twitter] , I will do it better.
+#If you have any suggest, please [@miagame_com](https://twitter.com/miagame_com) , I will do it better.
 
 * User: Jackie Qi / miagame.com
 * Date: 2015/9/9
