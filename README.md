@@ -15,11 +15,11 @@ create fla in Flash, and design the UI and Scene in timeline.
 Second:
 run the ExportToJS.jsfl
 it will be export the stage resource to PNG in /res
-Edit game config
-the defalut stage size as same as Fla publish size
-set the boot scene and firstScene
 
-code
+Edit game config
+
+//the defalut stage size as same as Fla publish size
+//set the boot scene and firstScene
 
 MIA.gameConfig = {
     stageWidth:MIA.stageDes.stageWidth,
@@ -29,9 +29,7 @@ MIA.gameConfig = {
 };
 
 
-set the scene
-
-code
+//set the scene
 
 MIA.startGame = function () {
     var game = new Phaser.Game(MIA.gameConfig.stageWidth, MIA.gameConfig.stageHeight, Phaser.AUTO, 'game');
