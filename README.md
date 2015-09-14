@@ -66,9 +66,9 @@ MIA.startGame = function () {
 ```
 
 ##Last
-* ###edit game logic
-* ###edit index.html
-* ###run the game
+* edit game logic
+* edit index.html
+* run the game
 
 
 #If you have any suggest, please [@miagame_com](https://twitter.com/miagame_com) , I will do it better.
