@@ -20,6 +20,7 @@ the defalut stage size as same as Fla publish size
 set the boot scene and firstScene
 
 code
+
 MIA.gameConfig = {
     stageWidth:MIA.stageDes.stageWidth,
     stageHeight:MIA.stageDes.stageHeight,
@@ -27,9 +28,11 @@ MIA.gameConfig = {
     firstScene:"Scene1"
 };
 
+
 set the scene
 
 code
+
 MIA.startGame = function () {
     var game = new Phaser.Game(MIA.gameConfig.stageWidth, MIA.gameConfig.stageHeight, Phaser.AUTO, 'game');
     //----Add Scene
@@ -43,7 +46,8 @@ MIA.startGame = function () {
     MIA.gameConfig.firstScene = "Scene1";
     game.state.start(MIA.gameConfig.bootScene);
 };
-.
+
+
 Last
 edit game logic
 edit index.html
